@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Product Store</h1>
+        <form id="search-form">
+            <input type="text" id="category-input" placeholder="Search by category">
+            <input type="number" id="price-input" placeholder="Max price">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+    <main>
+        <div id="products-content"></div>
+        <div id="page-controls">
+            <button id="prev-button" disabled>Previous</button>
+            <span id="page-number">1</span>
+            <button id="next-button">Next</button>
+        </div>
+    </main>
+    <aside>
+        <h2>Cart</h2>
+        <ul id="cart-content"></ul>
+    </aside>
+    <script src="dis/app.js"></script>
+</body>
+</html>
